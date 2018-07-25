@@ -20,10 +20,10 @@ import redis.clients.jedis.Jedis;
 public class UserRedPacketServiceImpl implements UserRedPacketService {
 
     @Autowired
-    private UserRedPacketDao userRedPacketDao = null;
+    private UserRedPacketDao userRedPacketDao;
 
     @Autowired
-    private RedPacketDao redPacketDao = null;
+    private RedPacketDao redPacketDao;
 
     // Ê§°Ü
     private static final int FAILED = 0;

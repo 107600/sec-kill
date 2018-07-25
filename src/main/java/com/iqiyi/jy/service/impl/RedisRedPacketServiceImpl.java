@@ -26,10 +26,10 @@ public class RedisRedPacketServiceImpl implements RedisRedPacketService {
 	private static final int TIME_SIZE = 1000;
 
 	@Autowired
-	private RedisTemplate redisTemplate = null; // RedisTemplate
+	private RedisTemplate redisTemplate; // RedisTemplate
 
 	@Autowired
-	private DataSource dataSource = null; // 数据源
+	private DataSource dataSource; // 数据源
 
 	@Override
 	// 开启新线程运行

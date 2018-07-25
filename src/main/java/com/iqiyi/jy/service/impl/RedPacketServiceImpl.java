@@ -14,7 +14,7 @@ import com.iqiyi.jy.service.RedPacketService;
 public class RedPacketServiceImpl implements RedPacketService {
 	
 	@Autowired
-	private RedPacketDao  redPacketDao = null;
+	private RedPacketDao  redPacketDao;
 
 	@Override
 	@Transactional(isolation=Isolation.READ_COMMITTED, propagation = Propagation.REQUIRED)
